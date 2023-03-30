@@ -1,0 +1,119 @@
+@mixin mobile {
+  @media screen and (max-width:768px) {
+    @content;
+  }
+}
+
+body {
+  font-family: '宋体';
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #e7edf8;
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    line-height: 2;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    background-color: white;
+    padding: 2em;
+
+    &>img {
+      height: 50px;
+
+      &:first-child {
+        padding-right: 16px;
+      }
+    }
+  }
+
+  .oneColumn {
+    padding: 2em;
+  }
+
+  .pub_border {
+    border: 1px #dddddd solid;
+  }
+
+  hr {
+    border: 1px #dddddd solid;
+    margin: 2em;
+  }
+
+  .inline-word {
+    font-weight: 600;
+    width: 6em;
+  }
+
+  .indent {
+    text-indent: 2em;
+  }
+
+  .align {
+    text-align: justify;
+  }
+
+  main {
+    background-color: white;
+    padding-bottom: 1px;
+
+    .breadcrumbNav {
+      background-color: #e7e7e7;
+      font-size: 14px;
+      padding: 1em 2em;
+    }
+
+    h1 {
+      padding-top: 1em;
+      margin-top: 0;
+    }
+
+    #body-wrap {
+      margin: 2em;
+
+      #content-inner {
+        .title {
+          font-size: 22px;
+        }
+
+        .catalogue {
+          padding-left: 2em;
+          margin-top: 2em;
+
+          a {
+            display: block;
+            margin-block-start: 1em;
+
+            &.section {
+              padding-left: 2em;
+            }
+          }
+        }
+
+        .main-body {
+          margin-top: 2em;
+
+          &>div {
+            display: flex;
+
+            &>div {
+              width: calc(100% - 6em);
+            }
+          }
+        }
+      }
+    }
+  }
+}
