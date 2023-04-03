@@ -6,9 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>守正 - 爱生活，爱工作，爱折腾</title>
-  <!-- <link rel="stylesheet" href="./css/main.min.css">
-  <link rel="stylesheet" href="./css/style.min.css"> -->
-  <link rel="stylesheet" href="./main.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" type="image/x-icon" href="./img/icon.webp">
   <link rel="apple-touch-icon" href="./img/icon.webp">
   <meta name="apple-mobile-web-app-title" content="守正">
@@ -19,6 +18,9 @@
   <link rel="stylesheet" href="./font/iconfont.css">
   <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn3.codesign.qq.com/icons/qwKrMZeANRZk1md/latest/iconfont.js"></script>
+  <script>
+    !function (p) { "use strict"; !function (t) { var s = window, e = document, i = p, c = "".concat("https:" === e.location.protocol ? "https://" : "http://", "sdk.51.la/js-sdk-pro.min.js"), n = e.createElement("script"), r = e.getElementsByTagName("script")[0]; n.type = "text/javascript", n.setAttribute("charset", "UTF-8"), n.async = !0, n.src = c, n.id = "LA_COLLECT", i.d = n; var o = function () { s.LA.ids.push(i) }; s.LA ? s.LA.ids && o() : (s.LA = p, s.LA.ids = [], o()), r.parentNode.insertBefore(n, r) }() }({ id: "K1KrbjEVxYX1NxW3", ck: "K1KrbjEVxYX1NxW3", autoTrack: true });
+  </script>
 </head>
 
 <body id="body">
@@ -151,8 +153,9 @@
       </a>
     </div>
     <div class="banner-pic">
-      <img class="banner-pic-img simple-parallax-initialized" src="./img/banner-skill.webp" alt="banner image"
-        style="will-change: transform; transform: translate3d(0px, 50px, 0px); transition: transform 2s cubic-bezier(0, 0, 0, 1) 0s;">
+      <svg class="banner-pic-img icon" aria-hidden="true" style="width: 860px;height: 500px;">
+        <use xlink:href="#icon-banner-skill"></use>
+      </svg>
     </div>
   </div>
 
@@ -172,7 +175,7 @@
           <div class="group-item-right">
             <div class="group-info">
               <div class="title">笔记博客</div>
-              <div class="discription">一个超级简洁好看的Hugo模板</div>
+              <div class="discription">一个超级简洁好看的Hugo主题</div>
             </div>
             <a class="group button" href="https://note.ll.sc.cn" target="_blank">
               <span>点击前往</span>
@@ -190,7 +193,7 @@
           <div class="group-item-right">
             <div class="group-info">
               <div class="title">个人简历</div>
-              <div class="discription">学习的时候做着玩的</div>
+              <div class="discription">学习的时候做着玩的，还没有用到过</div>
             </div>
             <a class="group button" href="https://resume.ll.sc.cn/" target="_blank">
               <span>点击前往</span>
@@ -215,7 +218,7 @@
   </div>
 </body>
 
-<script src="./js/simpleParallax.min.js"></script>
-<script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script src="./js/main.min.js"></script>
 
 </html>
