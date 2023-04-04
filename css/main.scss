@@ -387,7 +387,17 @@ a.button {
     .banner-pic-img {
       max-width: 968px;
       width: 90%;
-      margin: auto;;
+      margin: auto;
+
+      &.icon {
+        width: 860px;
+        height: 500px;
+
+        @include mobile() {
+          width: 360px;
+          height: 200px;
+        }
+      }
     }
   }
 
