@@ -529,12 +529,21 @@ a.button {
       align-items: center;
     }
 
-    a:not(:last-child)::after {
-      content: "|";
-      padding: 0 5px;
+    p {
+      font-weight: bold;
+      margin: 0;
+    }
 
-      @include mobile() {
-        content: none;
+    a {
+      font-weight: normal;
+
+      &:not(:last-child)::after {
+        content: "|";
+        padding: 0 5px;
+
+        @include mobile() {
+          content: none;
+        }
       }
     }
   }
